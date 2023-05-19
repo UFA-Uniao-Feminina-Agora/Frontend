@@ -1,5 +1,11 @@
 #button-p{
-    border-color: rgb(7, 6, 6);
-    background-color: #ffffff60;
-    color: "black"
+    border-color: #69369e;
+    background-color: #000000ef;
+    color: "white"
+}
+
+#button-c{
+    border-color: #69369e;
+    background-color: #ffffffef;
+    color: "#000000"
 }

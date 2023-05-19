@@ -23,11 +23,11 @@ function Navbar() {
 
     return (
         <>
-            <AppBar position="static" style={{ backgroundColor: '#FF70CA' }}>
+            <AppBar position="static" style={{ backgroundColor: '#69369e' }}>
                 <Toolbar variant="dense">
                     <ThemeProvider theme={theme}>
-                    <img src="src/assets/images/logo.png" alt="Logo ufa" width="130px" height="100px" />
-                        <Box marginLeft="auto">
+                    <img src="src/assets/images/logo.png" alt="Logo ufa" width="60px" height="30px" />
+                        <Box height={'50px'} marginLeft="auto">
                             <IconButton
                                 edge="end"
                                 color="inherit"
