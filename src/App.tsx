@@ -17,6 +17,7 @@ import store from "./store/Store";
 import { ToastContainer } from "react-toastify";
 import Perfil from "./componentes/perfil/verPerfil/Perfil";
 import DeletarPostagem from "./componentes/postagens/deletarPostagem/DeletarPostagem";
+import AtualizarPerfil from "./componentes/perfil/atualizarPerfil/AtualizarPerfil";
 import DeletaTemas from "./componentes/temas/deletatemas/DeletaTemas";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/login" element={<Login />} />
@@ -43,6 +44,7 @@ function App() {
             <Route path="/temas" element={<ListaTemas />} />
             <Route path="/postagens" element={<ListaPostagem />} />
             <Route path="/perfil" element={<Perfil />} />
+            <Route path="/atualizar-perfil" element={<AtualizarPerfil />} />
           </Routes>
           <Footer />
         </BrowserRouter>

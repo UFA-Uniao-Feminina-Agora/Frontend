@@ -33,10 +33,11 @@ function Home() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "white" }}>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "#34185c", fontWeight: "bold" }}>UFA!</Typography>
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#f1f0f2" }}>
+                <Grid alignItems="center" item xs={6}>                   
+                   
+                    // <Box paddingX={5} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "#34185c", fontWeight: "bold" }}>Bem vindo a nossa comunidade!!</Typography> 
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "#34185c", fontWeight: "bold" }}>Encontre aqui oportunidades de crescimento!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
