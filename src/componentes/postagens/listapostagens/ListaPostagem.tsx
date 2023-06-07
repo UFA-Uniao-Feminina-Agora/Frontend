@@ -70,7 +70,7 @@ function ListaPostagem() {
                     {post.texto}
                   </Typography>
                   <Typography variant="body2" component="p" className='texto-tema'>
-                    {post.tema?.descricao}
+                    {post.tema?.nome}
                   </Typography>
                 </CardContent>
                 <CardActions className='box-postagem' >
