@@ -27,6 +27,7 @@ function App() {
         <ToastContainer />
         <BrowserRouter>
           <Navbar />
+          <div style={{ minHeight: '100vh' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -46,6 +47,7 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/atualizar-perfil" element={<AtualizarPerfil />} />
           </Routes>
+          </div>
           <Footer />
         </BrowserRouter>
       </Provider>
