@@ -5,7 +5,6 @@ import Sobre from "../../paginas/sobre/Sobre";
 import TabHome from "./tabhome/TabHome";
 import Missao from "../missao/Missao";
 
-
 function Home() {
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -18,36 +17,30 @@ function Home() {
     <>
       <Grid
         container
-        // direction="row"
-        // justifyContent="center"
-        // alignItems="center"
         style={{ backgroundColor: "#c77dff" }}
+        justifyContent="center"
+        alignItems="center"
+        spacing={2}
       >
-        <Grid>
-          <Box>
-            <Box>
-              <Grid>
-                <img
-                  className="imagemLogo"
-                  src="../../../src/assets/images/ufa_logo.roxo.png"
-                  alt=""
-                  style={{ width: "94px", height: "80px" }} // Ajuste o tamanho conforme desejado
-                />
-              </Grid>
-            </Box>
-          </Box>
+        <Grid item>
+          <img
+            className="imagemLogo"
+            src="../../../src/assets/images/ufa_logo.roxo.png"
+            alt=""
+            style={{ width: "94px", height: "80px" }}
+          />
         </Grid>
       </Grid>
 
-      <Grid container style={{ marginTop: "2px" }}>
-        <Grid item xs={12}>
+      <Grid container style={{ marginTop: "2px" }} justifyContent="center">
+        <Grid item xs={12} md={8}>
           {/* <Carrossel /> */}
-           <img
+          <img
             className="imagemHome"
             src="../../../src/assets/images/home.jpg"
             alt="Imagem"
-            style={{ width: "1350px", height: "800px" }}
-          /> 
+            style={{ width: "100%", height: "auto" }}
+          />
         </Grid>
       </Grid>
 
@@ -57,4 +50,5 @@ function Home() {
     </>
   );
 }
+
 export default Home;
