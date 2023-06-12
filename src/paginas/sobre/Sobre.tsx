@@ -10,7 +10,7 @@ function Sobre() {
                     <Grid container direction="row">
                         <Grid item xs={12} sm={6}>
                             <Box padding={2}>
-                                <Typography variant="h3" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c", fontWeight: "bold" }}>Sobre</Typography>
+                                <Typography variant="h3" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c", fontWeight: "bold" }}>Sobre Nós</Typography>
                                 <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c", textAlign: 'justify', fontSize: "18px" }}>
                                     UFA (União Feminina Agora), uma poderosa rede social dedicada a unir mulheres e oferecer um apoio significativo em diversas áreas.
                                     Nosso principal objetivo é promover a empregabilidade feminina, fornecendo um espaço para divulgação de cursos e habilidades profissionais,
@@ -23,9 +23,7 @@ function Sobre() {
                                     Acreditamos na capacidade das mulheres de alcançar o sucesso em todas as esferas da vida e estamos comprometidos em fornecer um ambiente seguro,
                                     empoderador e inspirador para que isso aconteça. Na UFA, você encontrará uma comunidade vibrante de mulheres prontas para apoiá-la em sua jornada.
                                 </Typography>
-                                <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "black", fontWeight: "bold" }}>
-                                    Junte-se a nós na UFA e faça parte dessa incrível rede social criada especialmente para você, MULHER determinada a conquistar seus objetivos. Juntas, iremos mais longe!
-                                </Typography>
+                            
                             </Box>
                             </Grid>
                             <Grid item xs={12} sm={6}>

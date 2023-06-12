@@ -54,7 +54,8 @@ function Home() {
               style={{
                 color: "#bb91f2",
                 fontWeight: "bold",
-                textShadow: "1px 1px 2px rgba(0, 0, 0, 1)"
+                textShadow: "1px 1px 2px rgba(0, 0, 0, 1)",
+                textAlign: 'justify'
               }}
             >
               As mulheres são essenciais para a inovação e a diversidade. Mas ainda enfrentam muitos desafios e barreiras na área. Por isso, é importante apoia-las. Se você quer conhecer algumas histórias, clique aqui.
