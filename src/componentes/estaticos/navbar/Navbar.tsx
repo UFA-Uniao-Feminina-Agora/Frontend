@@ -1,5 +1,15 @@
 import React, { useState } from "react";
-import {AppBar, Toolbar, Typography, Box, IconButton, Drawer, List, ListItem, ListItemText} from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+} from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import "./Navbar.css";
@@ -67,7 +77,7 @@ navbarComponent = (
           <Box marginLeft="auto">
             <IconButton
               edge="end"
-              style={{ color: "black" }}
+              style={{ color: "#FFFFFF" }}
               aria-label="menu"
               onClick={toggleDrawer(true)}
             >
@@ -78,19 +88,13 @@ navbarComponent = (
               open={isDrawerOpen}
               onClose={toggleDrawer(false)}
             >
-              <List style={{ backgroundColor: "black" }}>
+              <List style={{ backgroundColor: "#cdb4db"  }}>
                 <Link to="/home2" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText primary="Home" style={{ color: "white" }} />
                   </ListItem>
                 </Link>
                 <Link to="/formularioPostagem" className="text-decorator-none">
-                  <ListItem button>
-                    <ListItemText
-                      primary="Criar Postagem"
-                      style={{ color: "white" }}
-                    />
-                  </ListItem>
                 </Link>
                 <Link to="/sobre" className="text-decorator-none">
                   <ListItem button>
@@ -104,6 +108,12 @@ navbarComponent = (
                   <ListItem button>
                     <ListItemText
                       primary="Postagens"
+                      style={{ color: "white" }}
+                    />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemText
+                      primary="Criar Postagem"
                       style={{ color: "white" }}
                     />
                   </ListItem>

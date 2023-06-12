@@ -1,17 +1,27 @@
 .btnSim{
-    background-color: #FF4D6D !important;
-    color:#FFFFFF !important;
+    border-color: #2d2c2e  !important;
+    background-color: hwb(262 27% 66% / 0.849) !important;
+    box-shadow: 3px 3px 7px #201e24;
+    color: white !important;
+    font-weight: bold !important;
+    border-radius: 6px !important;
  }
 
  .btnNao{
-        background-color: #FFB3C1 !important;
-        color:#FFFFFF !important;
+    border-color: #2d2c2e  !important;
+    background-color: hwb(262 27% 66% / 0.849) !important;
+    box-shadow: 3px 3px 7px #201e24;
+    color: white !important;
+    font-weight: bold !important;
+    border-radius: 6px !important;
  }
 
  .btnSim:hover{
-    background-color:#590D22 !important;
+    background-color: hwb(145 32% 20% / 0.705) !important;
+    border-color: hwb(145 32% 20% / 0.705) !important;
 }
 
 .btnNao:hover{
-    background-color:#590D22 !important;
+    background-color: hwb(0 8% 0% / 0.486) !important;
+    border-color: hwb(0 8% 0% / 0.596) !important;
 }

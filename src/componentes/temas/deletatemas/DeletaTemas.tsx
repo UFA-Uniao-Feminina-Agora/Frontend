@@ -75,7 +75,7 @@ function DeletaTemas() {
     <>
       <Box m={2}>
         <Card variant="outlined">
-          <CardContent style={{ backgroundColor: "#fff0f3" }}>
+          <CardContent style={{ backgroundColor: "#e7c6ff" }}>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
                 Deseja deletar o Tema:
@@ -83,7 +83,7 @@ function DeletaTemas() {
               <Typography color="textSecondary">{tema?.descricao}</Typography>
             </Box>
           </CardContent>
-          <CardActions style={{ backgroundColor: "#fff0f3" }}>
+          <CardActions style={{ backgroundColor: "#e7c6ff" }}>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2}>
               <Box mx={2}>
                 <Button
