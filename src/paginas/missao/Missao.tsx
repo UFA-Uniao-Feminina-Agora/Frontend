@@ -8,8 +8,8 @@ function Missao() {
             <Grid container direction="row" style={{ backgroundColor: "#F4ECF7" }}>
                 <Grid item xs={12}>
                     <Box paddingX={20}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c", fontWeight: "bold" }} >Nossa Missão:</Typography>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c" }}>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h6" align="center"  style={{ color: "#34185c", fontWeight: "bold" }} >Nossa Missão:</Typography>
+                        <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" style={{ color: "#34185c", textAlign: 'justify'}}>
                             Uma rede social dedicada ao empoderamento feminino, ao apoio mútuo e ao crescimento profissional. 
                             Aqui, você encontrará um espaço acolhedor e inspirador, onde mulheres de todas as áreas podem se 
                             conectar, aprender e se desenvolver. Nossa missão é fornecer um ambiente seguro e inclusivo, onde 
