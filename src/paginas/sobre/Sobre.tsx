@@ -30,7 +30,7 @@ function Sobre() {
                             </Grid>
                             <Grid item xs={12} sm={6}>
                                     <Box display="flex" justifyContent="flex-start"  alignItems="center" >
-                                        <img src="https://i.imgur.com/XBACAmV.jpeg" alt="Imagem" style={{ maxWidth: 'auto', height: 'auto' }} />
+                                        <img src="https://i.imgur.com/XBACAmV.jpeg" alt="Imagem" style={{ maxWidth: '100%', height: 'auto' }} />
                                     </Box>
                                 </Grid>
                         
@@ -39,7 +39,7 @@ function Sobre() {
                 </Grid>
             </Grid>
         </>
-        
+
     )
 }
 
