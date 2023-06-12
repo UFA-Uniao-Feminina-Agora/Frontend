@@ -19,6 +19,7 @@ import Perfil from "./componentes/perfil/verPerfil/Perfil";
 import DeletarPostagem from "./componentes/postagens/deletarPostagem/DeletarPostagem";
 import AtualizarPerfil from "./componentes/perfil/atualizarPerfil/AtualizarPerfil";
 import DeletaTemas from "./componentes/temas/deletatemas/DeletaTemas";
+import Home2 from "./paginas/home2/Home2";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/home2" element={<Home2 />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastrar" element={<Cadastrar />} />

@@ -79,7 +79,7 @@ navbarComponent = (
               onClose={toggleDrawer(false)}
             >
               <List style={{ backgroundColor: "black" }}>
-                <Link to="/home" className="text-decorator-none">
+                <Link to="/home2" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText primary="Home" style={{ color: "white" }} />
                   </ListItem>

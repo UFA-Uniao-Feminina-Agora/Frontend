@@ -2,9 +2,9 @@ import { Box, Grid, Typography, Tab, Tabs, Button } from "@mui/material";
 import React, { useState } from "react";
 // import Carrossel from "../../componentes/carrossel/Carrossel";
 import Sobre from "../../paginas/sobre/Sobre";
-import TabHome from "./tabhome/TabHome";
+import TabHome2 from "./tabHome2/TabHome2.tsx";
 import Missao from "../missao/Missao";
-import "./Home.css"
+import "./Home2.css"
 import { Link } from "react-router-dom";
 import UserLogin from "../../models/userLogin";
 import { addToken } from "../../store/token/Action";
@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 
 
 
-function Home() {
+function Home2() {
   const [tabIndex, setTabIndex] = useState(0);
 
   const [value, setValue] = useState("1");
@@ -25,24 +25,6 @@ function Home() {
 
   return (
     <>
-        <Grid
-          container
-          style={{ backgroundColor: "#c77dff" }}
-          justifyContent="center"
-          alignItems="center"
-          spacing={2}
-        >
-          <Grid item>
-            <img
-              className="imagemLogo"
-              src="../../../src/assets/images/ufa_logo.roxo.png"
-              alt=""
-              style={{ width: "94px", height: "80px" }}
-            />
-          </Grid>
-        </Grid>
-      
-
       <Grid container direction="row" justifyContent="left" alignItems="left" className='home-t'>
         <Grid alignItems="center" item xs={7} paddingTop={20}>
           <Box paddingX={15}> 
@@ -78,10 +60,10 @@ function Home() {
       </Grid>
 
       <Box sx={{ width: "100%" }}>
-        <TabHome />
+        <TabHome2 />
       </Box>
     </>
   );
 }
 
-export default Home;
+export default Home2;

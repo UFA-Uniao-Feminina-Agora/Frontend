@@ -1,4 +1,5 @@
 interface User{
+    nome: string;
     id:number;
     nomeUsuario:string;
     usuario:string;

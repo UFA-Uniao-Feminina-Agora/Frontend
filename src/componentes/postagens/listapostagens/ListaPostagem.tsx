@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../service/Service';
-import {Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import {Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import {Box} from '@mui/material';
 import './ListaPostagem.css';
 // import useLocalStorage from 'react-use-localstorage';
@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { UserState } from '../../../store/token/Reducer';
-
 
 function ListaPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])
@@ -53,25 +52,34 @@ function ListaPostagem() {
   
     }, [posts.length])
   
+
     return (
       <>
+
         {
           posts.map(post => (
+          <Grid className='grid-posts'>
             <Box m={2} className='box'>
               <Card variant="outlined" className='box-postagem' >
                 <CardContent className='box-postagem' >
                   <Typography color="textSecondary" gutterBottom>
-                    Postagens
+                    @{post.usuario?.nomeUsuario}
                   </Typography>
+                  {/* <Typography color="textSecondary" gutterBottom>
+                    {post.usuario?.foto}
+                  </Typography> */}
                   <Typography variant="h5" component="h2">
                     {post.titulo}
                   </Typography>
-                  <Typography variant="body2" component="p">
+                  <Typography className='texto-p'>
                     {post.texto}
                   </Typography>
                   <Typography variant="body2" component="p" className='texto-tema'>
                     {post.tema?.nome}
                   </Typography>
+                  <Typography className='data'>
+                  Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(post.data))}
+                </Typography>
                 </CardContent>
                 <CardActions className='box-postagem' >
                   <Box display="flex" justifyContent="center" mb={1.5} className='box-postagem'>
@@ -94,6 +102,7 @@ function ListaPostagem() {
                 </CardActions>
               </Card>
             </Box>
+          </Grid>  
           ))
         }
       </>

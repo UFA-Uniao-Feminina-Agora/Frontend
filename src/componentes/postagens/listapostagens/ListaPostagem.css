@@ -8,7 +8,7 @@
     box-shadow: 3px 3px 7px #201e24;
     color: white !important;
     font-weight: bold !important;
-    border-radius: 15px !important;
+    border-radius: 6px !important;
 }
 
 .button-d:hover{
@@ -19,9 +19,10 @@
 .button-atualizar{
     border-color: #643e97  !important;
     background-color: hwb(266 30% 43%) !important;
-    box-shadow: 3px 3px 7px #6e5394;
+    box-shadow: 3px 3px 7px #6e5394 !important;
     color: white !important;
     font-weight: bold !important;
+    border-radius: 6px !important;
 }
 
 .button-atualizar:hover{
@@ -47,3 +48,17 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.2);  
     border-radius: 12px; 
 }
+
+.data{
+    font-size: 2.3vh !important;
+}
+
+.texto-p{
+    font-size: 3vh !important;
+}
+
+.grid-posts{
+    padding-left: 340px;
+    padding-right: 340px;
+}
+
