@@ -66,7 +66,7 @@ navbarComponent = (
       <AppBar position="static" style={{ backgroundColor: "#996fcf" }}>
         <Toolbar variant="dense">
 
-          <Link to="/home" className="text-decorator-none">
+          <Link to="/home2" className="text-decorator-none">
             <img
               src="src/assets/images/ufa_logo_roxo.png"
               alt="Logo ufa"

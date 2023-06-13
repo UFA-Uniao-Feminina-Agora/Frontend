@@ -7,6 +7,7 @@ import {
     CardContent,
     Button,
     Typography,
+    Grid,
 } from "@material-ui/core";
 
 import Tema from "../../../models/Tema";
@@ -52,6 +53,7 @@ function ListaTema() {
     return (
         <>
             {temas?.map((tema) => (
+            <Grid className='grid-posts'>
                 <Box m={2} className='box'>
                     <Card variant="outlined">
                         <CardContent className='box-postagem'>
@@ -93,6 +95,7 @@ function ListaTema() {
                         </CardActions>
                     </Card>
                 </Box>
+            </Grid>    
             ))}
         </>
     );
