@@ -94,16 +94,6 @@ navbarComponent = (
                     <ListItemText primary="Home" style={{ color: "white" }} />
                   </ListItem>
                 </Link>
-                <Link to="/formularioPostagem" className="text-decorator-none">
-                </Link>
-                <Link to="/sobre" className="text-decorator-none">
-                  <ListItem button>
-                    <ListItemText
-                      primary="Sobre"
-                      style={{ color: "#white" }}
-                    />
-                  </ListItem>
-                </Link>
                 <Link to="/postagens" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
@@ -111,13 +101,15 @@ navbarComponent = (
                       style={{ color: "white" }}
                     />
                   </ListItem>
+                </Link>  
+                <Link to="/formularioPostagem" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
-                      primary="Criar Postagem"
+                      primary="Cadastrar Postagem"
                       style={{ color: "white" }}
                     />
                   </ListItem>
-                </Link>
+                  </Link>  
                 <Link to="/temas" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText

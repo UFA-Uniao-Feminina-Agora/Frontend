@@ -1,78 +1,100 @@
-.textos1{
+.textos1 {
     color: #2f184b;
     /* font-weight: bold !important; */
 }
 
-.textos1:hover{
+.textos1:hover {
     color: #33125e;
     font-weight: bold !important;
 }
 
-.entrar{
+.entrar {
     color: #2f184b;
-    font-weight: bold !important; 
+    font-weight: bold !important;
     padding-top: 15vh;
 }
 
-.entrar:hover{
+.entrar:hover {
     color: #17082b;
-    font-weight: bold !important; 
+    font-weight: bold !important;
 }
 
-.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
     color: white;
     font-weight: bold !important;
 }
 
-.botao{
+.botao {
     background-color: #2f184b !important;
-    color:#FFFFFF !important;
+    color: #FFFFFF !important;
     border-radius: 15px !important;
     font-weight: bold !important;
- }
+}
 
- .botao:hover{
+.botao:hover {
     background-color: #20064180 !important;
-    color:#ffffff81 !important;
+    color: #ffffff81 !important;
     font-weight: bold !important;
- }
- 
- .imagem{
+}
+
+.imagem {
     background-image: url(../../../src/assets/images/testando_log.svg);
-    background-repeat:no-repeat; 
-    width:70vh;
+    background-repeat: no-repeat;
+    width: 70vh;
     min-height: 90vh;
     /* background-size: cover; */
     background-position: center;
 }
 
-.cor-fundo{
-   background-color: #a995c2;
-   height: auto;
-   
+.cor-fundo {
+    background-color: #a995c2;
+    height: auto;
+
 }
 
-.box-login{
+.box-login {
     background-color: #401c6b3d;
     border-radius: 10%;
     height: 93.5vh;
-  padding-right: 13vh;
-  padding-left: 13vh;
-  margin-top: 4vh;
-  margin-bottom: 2.5vh;
-  margin-right: 15vh;
-  margin-left: 8vh;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466), -2.3px -2.3px 4.3px rgba(255, 255, 255, 0.219);
+    padding-right: 13vh;
+    padding-left: 13vh;
+    margin-top: 4vh;
+    margin-bottom: 2.5vh;
+    margin-right: 15vh;
+    margin-left: 8vh;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466), -2.3px -2.3px 4.3px rgba(255, 255, 255, 0.219);
 }
 
-.nao-tem-conta{
+.nao-tem-conta {
     color: #532b88;
     /* font-weight: bold !important */
 }
 
-.nao-tem-conta:hover{
+.nao-tem-conta:hover {
     color: #33125e;
     font-weight: bold !important
 }
 
+
+@media(max-width: 700px) {
+    .box-login {
+        background-color: #401c6b3d;
+        border-radius: 10%;
+        height: 120vh;
+        width: 100px;
+        padding-right: 0vh;
+        padding-left: 0vh;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466), -2.3px -2.3px 4.3px rgba(255, 255, 255, 0.219);
+    }
+}
+
+@media(max-width: 700px){
+
+}
+
+@media (max-width: 700px) {
+    .imagem {
+        display: none;
+    }
+}

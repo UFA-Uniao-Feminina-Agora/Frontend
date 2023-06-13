@@ -1,10 +1,11 @@
-.botao-tema{
-    border-color: #885cc2  !important;
+.botao-tema {
+    border-color: #885cc2 !important;
     background-color: hwb(266 26% 39%) !important;
     box-shadow: 3px 3px 7px #2b203a !important;
     color: white !important;
     font-weight: bold !important;
 }
+
 /* 
 
 .botao-postagem{
@@ -33,20 +34,20 @@
 
 } */
 
-.imagemLogo{
-    width:110px !important; 
-    height:90px !important;
+.imagemLogo {
+    width: 110px !important;
+    height: 90px !important;
     margin-right: 30px !important;
 }
 
 
-.home-t{
-    background-image:url(https://i.imgur.com/mjjOtSU.jpg) !important;
+.home-t {
+    background-image: url(https://i.imgur.com/mjjOtSU.jpg);
     /* width: 190vh !important; */
-    min-height:78.6vh !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
+    min-height: 78.6vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* .veja-mais{
@@ -64,22 +65,22 @@
 } */
 
 
-.veja-mais{
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 2vh;
-      font-size: 1.3rem;
-      background-color: #6e3fa7cc;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
+.veja-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1.2vh !important;
+    font-size: 1.3rem;
+    background-color: #6e3fa7cc;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.veja-mais:hover{
+.veja-mais:hover {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 2vh;
@@ -91,4 +92,31 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+}
+
+@media (min-width: 764px) {
+    .texto-img {
+        width: 88vh;
+        padding-left: 12vh;
+        padding-top: 5vh;
+    }
+
+    .veja-mais {
+        margin-left: 12vh;
+        
+    }
+
+}
+
+@media(max-width: 700px) {
+
+    .texto-img {
+        color: #c14af8 !important;
+        text-shadow: 2.3px 1.2px 1px rgb(37, 1, 71) !important;
+    }
+
+    .veja-mais {
+        background-color: #8737ac9a !important ;
+        
+    }
 }

@@ -89,19 +89,19 @@ function Login(){
 
     return(
         <Grid container direction='row' justifyContent='center' alignItems='center' className='cor-fundo'>
-            <Grid alignItems='center' xs={6}>
+            <Grid alignItems='center' sm={6}>
                 <Box paddingX={20} className='box-login' justifyContent='center'>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom component='h3' align='center' className='entrar'>Entrar</Typography>
-                        <TextField className='campos-logar' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>)=>updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <Box marginTop={2} textAlign='center' justifyContent='center'>
+                        <TextField  value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>)=>updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' style={{ width: '100%' }}/>
+                        <TextField  value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' style={{ width: '100%' }} />
+                        <Box marginTop={2} textAlign='center' justifyContent='center' className='botao-container'>
                                 <Button type='submit' variant='contained' className='botao' >
                                     Logar
                                 </Button>
                         </Box>
                     </form>
-                    <Box display='flex' justifyContent='center' marginTop={2} >
+                    <Box display='flex' justifyContent='center' marginTop={2} className='texto-container'>
                         <Box marginRight={1} justifyContent='center'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='nao-tem-conta'>Não tem uma conta?</Typography>
                         </Box>
@@ -111,7 +111,7 @@ function Login(){
                     </Box>
                 </Box>    
             </Grid>
-            <Grid xs={6} className='imagem'>
+            <Grid xs={12} sm={6} className='imagem'>
                 
             </Grid>
         </Grid>
