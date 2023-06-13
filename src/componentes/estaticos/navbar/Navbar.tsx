@@ -60,9 +60,9 @@ function Navbar() {
 
   var navbarComponent;
 
-  if (token !== ""){
-navbarComponent = (
- 
+  if (token !== "") {
+    navbarComponent = (
+
       <AppBar position="static" style={{ backgroundColor: "#996fcf" }}>
         <Toolbar variant="dense">
 
@@ -88,7 +88,7 @@ navbarComponent = (
               open={isDrawerOpen}
               onClose={toggleDrawer(false)}
             >
-              <List style={{ backgroundColor: "#cdb4db"  }}>
+              <List style={{ backgroundColor: "#cdb4db" }}>
                 <Link to="/home2" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText primary="Home" style={{ color: "white" }} />
@@ -101,7 +101,7 @@ navbarComponent = (
                       style={{ color: "white" }}
                     />
                   </ListItem>
-                </Link>  
+                </Link>
                 <Link to="/formularioPostagem" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
@@ -109,7 +109,7 @@ navbarComponent = (
                       style={{ color: "white" }}
                     />
                   </ListItem>
-                  </Link>  
+                </Link>
                 <Link to="/temas" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
@@ -142,6 +142,14 @@ navbarComponent = (
                     />
                   </ListItem>
                 </Link>
+                <Link to="/postagensportitulo" className="text-decorator-none">
+                  <ListItem button>
+                    <ListItemText
+                      primary="Postagens por titulo"
+                      style={{ color: "white" }}
+                    />
+                  </ListItem>
+                </Link>
                 {/* <Link to="/login" className="text-decorator-none"> */}
                 <ListItem button onClick={goLogout}>
                   <ListItemText primary="Logout" style={{ color: "white" }} />
@@ -152,9 +160,9 @@ navbarComponent = (
           </Box>
         </Toolbar>
       </AppBar>
-);
-}
-return <>{navbarComponent}</>;
+    );
+  }
+  return <>{navbarComponent}</>;
 }
 
 export default Navbar;

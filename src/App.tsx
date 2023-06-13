@@ -18,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import Perfil from "./componentes/perfil/verPerfil/Perfil";
 import DeletarPostagem from "./componentes/postagens/deletarPostagem/DeletarPostagem";
 import AtualizarPerfil from "./componentes/perfil/atualizarPerfil/AtualizarPerfil";
+import ListaPostagemPorTitulo from './componentes/postagens/listapostagemportitulo/ListaPostagemPorTitulo';
 import DeletaTemas from "./componentes/temas/deletatemas/DeletaTemas";
 import Home2 from "./paginas/home2/Home2";
 
@@ -48,6 +49,7 @@ function App() {
             <Route path="/postagens" element={<ListaPostagem />} />
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/atualizar-perfil" element={<AtualizarPerfil />} />
+            <Route path="/postagensportitulo" element={<ListaPostagemPorTitulo />} />
           </Routes>
           </div>
           <Footer />
