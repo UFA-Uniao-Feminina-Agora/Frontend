@@ -31,7 +31,7 @@ function AtualizarPerfil() {
   });
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       toast.error("Você precisa estar logado!!", {
         position: "top-right",
         autoClose: 2000,
@@ -68,18 +68,18 @@ function AtualizarPerfil() {
 }
 
   function confirmarSenhaHandle(e: ChangeEvent<HTMLInputElement>) {
-    setConfirmarSenha(e.target.value);
+    setConfirmarSenha(e.target.value)
   }
 
   function updatedPerfil(e: ChangeEvent<HTMLInputElement>) {
     setUser({
       ...user,
       [e.target.name]: e.target.value,
-    });
+    })
   }
 
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
-    e.preventDefault();
+    e.preventDefault()
 
     if (confirmarSenha === user.senha && user.senha.length >= 8) {
       if (id !== undefined) {
@@ -145,10 +145,10 @@ return (
                       error={checaNome}
                       value={user.nomeUsuario}
                       onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPerfil(e)}
-                      id="nome"
-                      label="nome"
+                      id="nomeUsuario"
+                      label="nomeUsuario"
                       variant="outlined"
-                      name="nome"
+                      name="nomeUsuario"
                       margin="normal"
                       fullWidth
                       helperText={checaNome ? 'Digite um nome válido!' : ''}
@@ -179,10 +179,10 @@ return (
                   <TextField
                       value={user.tipoUsuario}
                       onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPerfil(e)}
-                      id="tipo"
-                      label="tipo"
+                      id="tipoUsuario"
+                      label="tipoUsuario"
                       variant="outlined"
-                      name="tipo"
+                      name="tipoUsuario"
                       margin="normal"
                       fullWidth
                   />
