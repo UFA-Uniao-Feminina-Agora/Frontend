@@ -108,6 +108,15 @@ function Navbar() {
                       primary="Cadastrar Postagem"
                       style={{ color: "white" }}
                     />
+                    <Link to="/postagensportitulo" className="text-decorator-none">
+                  <ListItem button>
+                    <ListItemText
+                      primary="Postagens por titulo"
+                      style={{ color: "white" }}
+                    />
+                  </ListItem>
+                </Link>
+                
                   </ListItem>
                 </Link>
                 <Link to="/temas" className="text-decorator-none">
@@ -118,14 +127,7 @@ function Navbar() {
                     />
                   </ListItem>
                 </Link>
-                <Link to="/postagensportitulo" className="text-decorator-none">
-                  <ListItem button>
-                    <ListItemText
-                      primary="Postagens por titulo"
-                      style={{ color: "white" }}
-                    />
-                  </ListItem>
-                </Link>
+                
                 <Link to="/formularioTema" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
