@@ -7,6 +7,7 @@ import User from "../../../models/User";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Box, Button, Grid, TextField, Typography } from "@material-ui/core";
 import { addToken } from "../../../store/token/Action";
+import './AtualizarPerfil.css'
 
 function AtualizarPerfil() {
   let navigate = useNavigate();
@@ -136,11 +137,10 @@ const checaVazio = user.nomeUsuario.length === 0 || user.usuario.length === 0 ||
 return (
 
   <Grid container direction='row' justifyContent='center' alignItems='center'>
-      <Grid item xs={6} className='imagem2'></Grid>
       <Grid item xs={6} alignItems='center'>
-          <Box paddingX={10}>
+          <Box paddingX={5}>
               <form onSubmit={onSubmit}>
-                  <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de Atualização do Usuário</Typography>
+                  <Typography variant="h3" component="h1" align="center" >Formulário de Atualização do Usuário</Typography>
                   <TextField
                       error={checaNome}
                       value={user.nomeUsuario}
@@ -213,11 +213,11 @@ return (
                       helperText={user.senha !== undefined && confirmarSenha !== user.senha ? 'As senhas não conferem!' : ''}
                   />
                   <Link to='/perfil' className='text-decorator-none'>
-                      <Button variant='contained' color='secondary' className='btnCancelar'>
+                      <Button className='botao-cancelar' variant='contained' >
                           Cancelar
                       </Button>
                   </Link>
-                  <Button type="submit" variant="contained" color="primary"
+                  <Button className='botao-atualizar' type="submit" variant="contained" 
                       disabled={checaNome || checaUsuario ||
                           confirmarSenha !== user.senha || checaVazio ? true : false}
                   >

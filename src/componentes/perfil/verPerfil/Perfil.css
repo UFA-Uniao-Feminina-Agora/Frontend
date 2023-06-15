@@ -3,7 +3,7 @@
     border-radius: 32px 0;
     padding: 20px;
     margin: 20px;
-    background-color: #FFB3C1;
+    background-color: #cfbaf0;
 }
 
 .card-container-imagem{
@@ -15,31 +15,34 @@
 }
 
 .card-container-info{
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
     align-items: center;
-    margin: 32px 32px 32px 56px;
+    margin: 10px 10px 10px 10px !important;
+
 }
 
 .card-imagem{
-    max-height: 500px;
-    border-radius: 50%;
-    border: 5px solid white;
+    max-height: 300px;
+    border-radius: 10%;
+    border: 5px solid #3c096c;
     object-fit: cover;
 }
 
-.card-container-texto{
-    max-width: 550px;
-    color: #fff;
-    text-align: justify;
-}
-
 h1{
-    color: #C9184A;
+    color: #5a189a;
 }
 
 h3{
-    color: #590D22;
+    color: #9d4edd;
     text-align: center;
     text-decoration: none !important;
+}
+
+.btn-atualizar{
+    text-decoration: none !important;
+    display: flex !important;
+    margin: 250px 50px 50px 400px !important;
+    background-color: #7b2cbf !important;
+    color: white !important; 
+    border: 5px solid #3c096c !important;
 }
