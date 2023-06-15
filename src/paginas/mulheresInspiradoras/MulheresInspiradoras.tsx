@@ -25,12 +25,14 @@ function MulheresInspiradoras() {
                 spacing={2}
             >
                 <Grid item>
+                <Link to="/home2" className="text-decorator-none">    
                     <img
                         className="imagemLogo"
                         src="../../../src/assets/images/ufa_logo.roxo.png"
                         alt=""
                         style={{ width: "94px", height: "80px" }}
                     />
+                </Link>    
                 </Grid>
             </Grid>
             <Grid  container direction="row" justifyContent="center" alignItems="center" className='box-cima'>
