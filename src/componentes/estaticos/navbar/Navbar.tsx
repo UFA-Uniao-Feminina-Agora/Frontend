@@ -118,6 +118,14 @@ function Navbar() {
                     />
                   </ListItem>
                 </Link>
+                <Link to="/postagensportitulo" className="text-decorator-none">
+                  <ListItem button>
+                    <ListItemText
+                      primary="Postagens por titulo"
+                      style={{ color: "white" }}
+                    />
+                  </ListItem>
+                </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText
@@ -142,19 +150,11 @@ function Navbar() {
                     />
                   </ListItem>
                 </Link>
-                <Link to="/postagensportitulo" className="text-decorator-none">
-                  <ListItem button>
-                    <ListItemText
-                      primary="Postagens por titulo"
-                      style={{ color: "white" }}
-                    />
-                  </ListItem>
-                </Link>
-                {/* <Link to="/login" className="text-decorator-none"> */}
+                <Link to="/home" className="text-decorator-none">
                 <ListItem button onClick={goLogout}>
                   <ListItemText primary="Logout" style={{ color: "white" }} />
                 </ListItem>
-                {/* </Link> */}
+                </Link>
               </List>
             </Drawer>
           </Box>
