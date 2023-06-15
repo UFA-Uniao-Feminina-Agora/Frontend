@@ -1,0 +1,63 @@
+.txt{
+    font-size: 18px !important;
+    padding-top: 15vh;
+    color: rgb(57, 2, 109) !important;
+    font-style: italic;
+}
+
+.txt:hover{
+    font-size: 20px !important;
+    padding-top: 15vh;
+    color: rgb(57, 2, 109) !important;
+    font-style: italic;
+}
+
+
+.img{
+    padding-top: 18vh;
+    padding-left: 25vh;
+}
+
+.txt-lisa{
+    font-size: 18px !important;
+    padding-top: 10vh;
+    padding-right: 9vh;
+    color: rgb(57, 2, 109) !important;
+    font-style: italic;
+    
+}
+
+.txt-lisa:hover{
+    font-size: 20px !important;
+    padding-top: 10vh;
+    padding-right: 9vh;
+    color: rgb(57, 2, 109) !important;
+    font-style: italic;
+    
+}
+
+.img-lisa{
+    padding-top: 10vh;
+    padding-left: 28.3vh;   
+}
+
+.txt-heley{
+    font-size: 18px !important;
+    padding-top: 9vh;
+    color: rgb(57, 2, 109) !important;
+    font-style: italic;
+    
+}
+
+.txt-heley:hover{
+    font-size: 20px !important;
+    padding-top: 9vh;
+    color: rgb(63, 8, 114) !important;
+    font-style: italic;
+    
+}
+
+.img-heley{
+    padding-top: 5vh;
+    padding-left: 18vh;
+}

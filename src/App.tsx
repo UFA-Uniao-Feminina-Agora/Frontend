@@ -20,6 +20,7 @@ import DeletarPostagem from "./componentes/postagens/deletarPostagem/DeletarPost
 import AtualizarPerfil from "./componentes/perfil/atualizarPerfil/AtualizarPerfil";
 import DeletaTemas from "./componentes/temas/deletatemas/DeletaTemas";
 import Home2 from "./paginas/home2/Home2";
+import MulheresInspiradoras from "./paginas/mulheresInspiradoras/MulheresInspiradoras";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/home2" element={<Home2 />} />
+            <Route path="/mulheres-inspiradoras" element={<MulheresInspiradoras />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastrar" element={<Cadastrar />} />
