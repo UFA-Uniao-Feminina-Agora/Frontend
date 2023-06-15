@@ -82,7 +82,7 @@ function CadastroUsuario() {
                                 Cadastrar
                             </Button>
 
-                            <Link to='/login'>
+                            <Link to='/home'>
                                 <Button variant='contained' className='cancelar' style={{ margin: '15px' }}>
                                     Cancelar
                                 </Button>
