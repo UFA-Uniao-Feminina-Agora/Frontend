@@ -2,7 +2,7 @@ import React, { useState, useEffect, ChangeEvent } from "react";
 import User from '../../models/User';
 import { cadastroUsuario } from "../../service/Service";
 import './CadastroUsuario.css'
-import { Grid, Typography, Button, TextField } from "@material-ui/core";
+import { Grid, Typography, Button, TextField, Hidden } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 
@@ -62,10 +62,12 @@ function CadastroUsuario() {
     }
     return (
         <Grid container direction="row" justifyContent="center" alignItems="center" className='cor-fundo'>
+             <Hidden smDown>
             <Grid item className="imgCadastro" xs={6}>
             </Grid>
+            </Hidden>
 
-            <Grid item xs={6} alignItems="center" className="elementos">
+            <Grid item xs={false} sm={8} md={6} lg={6} xl={2} alignItems="center" className="elementos">
                 <Box className="box-cadastrar">
                     <form onSubmit={onSubmit}>
                         <Typography className="textoCadastro" color='textPrimary' align='center'>Cadastre-se</Typography>

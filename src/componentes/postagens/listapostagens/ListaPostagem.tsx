@@ -2,62 +2,74 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../service/Service';
-import {Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
-import {Box} from '@mui/material';
+import { Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
+import { Box } from '@mui/material';
 import './ListaPostagem.css';
-// import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { UserState } from '../../../store/token/Reducer';
+import User from '../../../models/User';
 
 function ListaPostagem() {
-    const [posts, setPosts] = useState<Postagem[]>([])
-    // const [token, setToken] = useLocalStorage('token');
-    const token = useSelector<UserState, UserState["tokens"]>(
-        (state) => state.tokens
-      );
-    let navigate = useNavigate();
-  
-    useEffect(() => {
-      if (token == "") {
-        toast.error("Você precisa estar logado!", {
+  const [posts, setPosts] = useState<Postagem[]>([])
 
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
-          });
+  const userId = useSelector<UserState, UserState['id']>(
+    (state) => state.id
+  )
 
-        navigate("/login")
-  
-      }
-    }, [token])
-  
-    async function getPost() {
-      await busca("/postagens", setPosts, {
-        headers: {
-          'Authorization': token
-        }
-      })
+  const token = useSelector<UserState, UserState["tokens"]>(
+    (state) => state.tokens
+  );
+  const [user, setUser] = useState<User>({
+    id: +userId,    // Faz uma conversão de String para Number
+    nomeUsuario: '',
+    usuario: '',
+    senha: '',
+    tipoUsuario: '',
+    foto: ''
+  })
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    if (token == "") {
+      toast.error("Você precisa estar logado!", {
+
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+      });
+
+      navigate("/login")
+
     }
-  
-    useEffect(() => {
-  
-      getPost()
-  
-    }, [posts.length])
-  
+  }, [token])
 
-    return (
-      <>
+  async function getPost() {
+    await busca("/postagens", setPosts, {
+      headers: {
+        'Authorization': token
+      }
+    })
+  }
 
-        {
-          posts.map(post => (
+  useEffect(() => {
+
+    getPost()
+
+  }, [posts.length])
+
+
+  return (
+    <>
+
+      {
+        posts.map(post => (
           <Grid className='grid-posts'>
             <Box m={2} className='box'>
               <Card variant="outlined" className='box-postagem' >
@@ -65,9 +77,6 @@ function ListaPostagem() {
                   <Typography color="textSecondary" gutterBottom>
                     @{post.usuario?.nomeUsuario}
                   </Typography>
-                  {/* <Typography color="textSecondary" gutterBottom>
-                    {post.usuario?.foto}
-                  </Typography> */}
                   <Typography variant="h5" component="h2">
                     {post.titulo}
                   </Typography>
@@ -78,35 +87,37 @@ function ListaPostagem() {
                     {post.tema?.nome}
                   </Typography>
                   <Typography className='data'>
-                  Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(post.data))}
-                </Typography>
+                    Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(post.data))}
+                  </Typography>
                 </CardContent>
                 <CardActions className='box-postagem' >
-                  <Box display="flex" justifyContent="center" mb={1.5} className='box-postagem'>
-  
-                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                      <Box mx={1}>
-                        <Button variant="contained" className="marginLeft button-atualizar" size='small'>
-                          atualizar
-                        </Button>
-                      </Box>
-                    </Link>
-                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                      <Box mx={1}>
-                        <Button className="button-d" variant="contained" size='small'>
-                          deletar
-                        </Button>
-                      </Box>
-                    </Link>
-                  </Box>
+
+                  {/* {post.usuario?.id === userId && ( */}
+                    <Box display="flex" justifyContent="center" mb={1.5} className='box-postagem'>
+                      <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                        <Box mx={1}>
+                          <Button variant="contained" className="marginLeft button-atualizar" size='small'>
+                            atualizar
+                          </Button>
+                        </Box>
+                      </Link>
+                      <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                        <Box mx={1}>
+                          <Button className="button-d" variant="contained" size='small'>
+                            deletar
+                          </Button>
+                        </Box>
+                      </Link>
+                    </Box>
+                  {/* )}:null */}
                 </CardActions>
               </Card>
             </Box>
-          </Grid>  
-          ))
-        }
-      </>
-    )
-  }
-  
-  export default ListaPostagem;
+          </Grid>
+        ))
+      }
+    </>
+  )
+}
+
+export default ListaPostagem;
