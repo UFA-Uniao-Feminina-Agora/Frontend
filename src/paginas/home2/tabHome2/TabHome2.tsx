@@ -18,7 +18,7 @@ function TabHome2() {
   return (
     <>
       <TabContext value={value}>
-        <AppBar position="static" className='fundoAppbar' style={{backgroundColor:"#c77dff"}}>
+        <AppBar position="static" className='fundoAppbar' style={{backgroundColor:"#996fcf"}}>
           <Tabs centered onChange={handleChange}>
             <Tab label="Sobre Nós" value="1" style={{color:"#3c096c", fontWeight: "bold"}}/>
             <Tab label="Missão" value="2" style={{color:"#3c096c", fontWeight: "bold"}}/>

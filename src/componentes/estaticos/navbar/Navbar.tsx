@@ -88,7 +88,7 @@ function Navbar() {
               open={isDrawerOpen}
               onClose={toggleDrawer(false)}
             >
-              <List style={{ backgroundColor: "#cdb4db" }}>
+              <List style={{ backgroundColor: "#996fcf" }}>
                 <Link to="/home2" className="text-decorator-none">
                   <ListItem button>
                     <ListItemText primary="Home" style={{ color: "white" }} />

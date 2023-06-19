@@ -27,7 +27,7 @@ function Home() {
     <>
       <Grid
         container
-        style={{ backgroundColor: "#c77dff" }}
+        style={{ backgroundColor: "#996fcf" }}
         justifyContent="center"
         alignItems="center"
         spacing={2}
