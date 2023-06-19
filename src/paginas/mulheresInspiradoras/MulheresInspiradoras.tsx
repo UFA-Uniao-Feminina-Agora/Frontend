@@ -25,7 +25,7 @@ function MulheresInspiradoras() {
                 spacing={2}
             >
                 <Grid item>
-                <Link to="/home2" className="text-decorator-none">    
+                <Link to="/home" className="text-decorator-none">    
                     <img
                         className="imagemLogo"
                         src="../../../src/assets/images/ufa_logo.roxo.png"
