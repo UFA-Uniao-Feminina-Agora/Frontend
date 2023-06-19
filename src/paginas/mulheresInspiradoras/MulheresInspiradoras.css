@@ -1,11 +1,11 @@
-.txt{
+.txt {
     font-size: 18px !important;
     padding-top: 15vh;
     color: rgb(57, 2, 109) !important;
     font-style: italic;
 }
 
-.txt:hover{
+.txt:hover {
     font-size: 20px !important;
     padding-top: 15vh;
     color: rgb(57, 2, 109) !important;
@@ -13,51 +13,73 @@
 }
 
 
-.img{
+.img {
     padding-top: 18vh;
     padding-left: 25vh;
 }
 
-.txt-lisa{
+.txt-lisa {
     font-size: 18px !important;
     padding-top: 10vh;
     padding-right: 9vh;
     color: rgb(57, 2, 109) !important;
     font-style: italic;
-    
+
 }
 
-.txt-lisa:hover{
+.txt-lisa:hover {
     font-size: 20px !important;
     padding-top: 10vh;
     padding-right: 9vh;
     color: rgb(57, 2, 109) !important;
     font-style: italic;
-    
+
 }
 
-.img-lisa{
+.img-lisa {
     padding-top: 10vh;
-    padding-left: 28.3vh;   
+    padding-left: 28.3vh;
 }
 
-.txt-heley{
+.txt-heley {
     font-size: 18px !important;
     padding-top: 9vh;
     color: rgb(57, 2, 109) !important;
     font-style: italic;
-    
+
 }
 
-.txt-heley:hover{
+.txt-heley:hover {
     font-size: 20px !important;
     padding-top: 9vh;
     color: rgb(63, 8, 114) !important;
     font-style: italic;
-    
+
 }
 
-.img-heley{
+.img-heley {
     padding-top: 5vh;
     padding-left: 18vh;
 }
+
+@media(max-width: 700px) {
+
+    .img{
+        align-items: center !important;
+        width: 200vh !important;
+       height: 100vh !important;
+    }
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+  }

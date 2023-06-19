@@ -36,13 +36,13 @@ function MulheresInspiradoras() {
                 </Grid>
             </Grid>
             <Grid  container direction="row" justifyContent="center" alignItems="center" className='box-cima'>
-                <Grid alignItems="center" item xs={6}>
+                <Grid /*alignItems="center" item xs={6}*/>
                     <Box paddingX={20} >
                         <Typography  className='txt' component="h3" align="justify" style={{ color: "black" }}>Augusta Ada Byron King, Condessa de Lovelace, atualmente conhecida como Ada Lovelace, foi uma matemática e escritora inglesa. Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage.</Typography>
                         {/* <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography> */}
                     </Box>
                 </Grid>
-                <Grid className='img' item xs={6} >
+                <Grid className='img' /*item xs={6}*/ >
                     <img src={Ada} alt="Ada-lovelace" width='325vh' height='190vh'/>
                 </Grid>
             </Grid>

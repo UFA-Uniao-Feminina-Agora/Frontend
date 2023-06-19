@@ -173,6 +173,7 @@ function CadastroPostagem() {
     <Container maxWidth="sm" className="topo">
       <form onSubmit={onSubmit}>
         <Typography
+          className="txt-formulário"
           variant="h3"
           style={{ color: "#532b88" }}
           component="h1"

@@ -1,5 +1,9 @@
 .topo{
     margin-top: 20px;
+    background-color: #d9c8f0 !important;
+    border-radius: 12px;
+    height: 70vh;
+    align-items: center;
 }
 
 .btnFinalizar{
@@ -30,7 +34,7 @@
 }
 
 .white-text input {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   .texto-form-post:hover{
     color: #17082b8a !important;
@@ -71,4 +75,9 @@
   .form-content {
     flex: 1;
     padding-right: 20px; /* Espaçamento à direita para separar o formulário da imagem */
+  }
+
+  .txt-formulário{
+    padding-top: 25px !important;
+    color: #532b88 !important;
   }
