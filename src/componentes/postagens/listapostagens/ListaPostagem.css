@@ -57,8 +57,16 @@
     font-size: 3vh !important;
 }
 
+/* .grid-posts{
+    padding-left: 340px;
+    padding-right: 340px;
+} */
+
+@media (min-width: 700px){
+
 .grid-posts{
     padding-left: 340px;
     padding-right: 340px;
 }
 
+}

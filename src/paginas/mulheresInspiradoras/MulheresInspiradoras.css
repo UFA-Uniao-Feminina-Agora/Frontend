@@ -13,11 +13,12 @@
 }
 
 .box-cima-d{
-    background-color: rgb(242, 230, 247);
+    background-color:#6e40a57c;
 }
 
-.box-cima{
-    background-color: #d8c1f5;
+
+.grid-geral-m{
+    background-color: #d8c1f5 ;
 }
 
 @media(max-width: 700px) {
