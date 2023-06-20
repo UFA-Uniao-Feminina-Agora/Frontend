@@ -36,7 +36,7 @@ function Home() {
         <Link to="/home" className="text-decorator-none">
           <img
             className="imagemLogo"
-            src="../../../src/assets/images/ufa_logo.roxo.png"
+            src="../../../src/assets/images/UFA.png"
             alt=""
             style={{ width: "94px", height: "80px" }}
           />
