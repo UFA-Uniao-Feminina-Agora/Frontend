@@ -28,7 +28,7 @@ function MulheresInspiradoras() {
                 <Link to="/home" className="text-decorator-none">    
                     <img
                         className="imagemLogo"
-                        src="../../../src/assets/images/ufa_logo.roxo.png"
+                        src="https://imgur.com/zxW39qt.png"
                         alt=""
                         style={{ width: "94px", height: "80px" }}
                     />
