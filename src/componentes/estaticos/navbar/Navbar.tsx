@@ -68,7 +68,7 @@ function Navbar() {
 
           <Link to="/home2" className="text-decorator-none">
             <img
-              src="src/assets/images/ufa_logo_roxo.png"
+              src="src/assets/images/UFA.png"
               alt="Logo ufa"
               width="100px"
               height="100px"
