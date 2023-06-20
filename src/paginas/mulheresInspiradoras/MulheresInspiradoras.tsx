@@ -35,7 +35,7 @@ function MulheresInspiradoras() {
                 </Link>    
                 </Grid>
             </Grid>
-        <Grid className='grid-geral-m'>    
+          
             <Grid   justifyContent="center" alignItems="center" className='box-cima'>
                 <Grid /*alignItems="center" item xs={6}*/>
                     <Box /*paddingX={20}*/ >
@@ -73,7 +73,7 @@ function MulheresInspiradoras() {
                 </Grid>
                 
             </Grid>
-        </Grid>    
+         
         </>)
 
 };
