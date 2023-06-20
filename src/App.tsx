@@ -22,6 +22,7 @@ import ListaPostagemPorTitulo from './componentes/postagens/listapostagemportitu
 import DeletaTemas from "./componentes/temas/deletatemas/DeletaTemas";
 import Home2 from "./paginas/home2/Home2";
 import MulheresInspiradoras from "./paginas/mulheresInspiradoras/MulheresInspiradoras";
+import MulheresInspiradoras2 from "./paginas/mulheresInspiradoras2/MulheresInspiradoras2";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/home2" element={<Home2 />} />
             <Route path="/mulheres-inspiradoras" element={<MulheresInspiradoras />} />
+            <Route path="/mulheres-inspiradoras2" element={<MulheresInspiradoras2 />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastrar" element={<Cadastrar />} />

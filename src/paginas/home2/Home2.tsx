@@ -44,7 +44,7 @@ function Home2() {
                         
                         <Box paddingBottom={5} display="flex" justifyContent="center">
                         
-                        <Link to="/mulheres-inspiradoras" className="veja-mais">Veja mais</Link>
+                        <Link to="/mulheres-inspiradoras2" className="veja-mais">Veja mais</Link>
                     
                     </Box>
           </Box>
