@@ -46,14 +46,14 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid className="img-grid" /*item xs={6}*/ >
-                    <img src={Ada} alt="Ada-lovelace" className='img'  />
+                    <img src='https://imgur.com/rXsbvja.png' alt="Ada-lovelace" className='img'  />
                 </Grid>
             </Grid>
 
             <Grid justifyContent="center" alignItems="center" className="box-cima-d">
                 
                 <Grid className='img-grid-d'>
-                    <img src={Lisa} alt="Lisa Su" className='img' />
+                    <img src='https://imgur.com/RN149QM.png' alt="Lisa Su" className='img' />
                 </Grid>
                 
                 <Grid>
@@ -71,7 +71,7 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid  className="img-grid" >
-                    <img src={Heley} alt="Heley Abreu" className='img'/>
+                    <img src='https://imgur.com/Z6ZlRqm.png' alt="Heley Abreu" className='img'/>
                 </Grid>
                 
             </Grid>   
@@ -79,7 +79,7 @@ function MulheresInspiradoras() {
             <Grid justifyContent="center" alignItems="center" className="box-cima-d">
                 
                 <Grid className='img-grid-d'>
-                    <img src={Amelia} alt="Amelia Earhart" className='img' />
+                    <img src='https://imgur.com/D2182m9.png' alt="Amelia Earhart" className='img' />
                 </Grid>
                 
                 <Grid>
@@ -98,7 +98,7 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid  className="img-grid" >
-                    <img src={Malala} alt="Malala Yousafzai" className='img'/>
+                    <img src='https://imgur.com/IOwnLYD.png' alt="Malala Yousafzai" className='img'/>
                 </Grid>
             </Grid>    
 
