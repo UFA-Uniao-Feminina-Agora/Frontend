@@ -19,9 +19,9 @@ function MulheresInspiradoras() {
 
         <>
 
-            <Grid
+            <Grid 
                 container
-                style={{ backgroundColor: "#996fcf" }}
+                style={{ backgroundColor: "#996fcf"}}
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
@@ -46,14 +46,14 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid className="img-grid" /*item xs={6}*/ >
-                    <img src={Ada} alt="Ada-lovelace" className='img' width={200} height={150}/>
+                    <img src={Ada} alt="Ada-lovelace" className='img'  />
                 </Grid>
             </Grid>
 
             <Grid justifyContent="center" alignItems="center" className="box-cima-d">
                 
                 <Grid className='img-grid-d'>
-                    <img src={Lisa} alt="Lisa Su" width={200} height={150} className='img-d' />
+                    <img src={Lisa} alt="Lisa Su" className='img' />
                 </Grid>
                 
                 <Grid>
@@ -71,7 +71,7 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid  className="img-grid" >
-                    <img src={Heley} alt="Heley Abreu" width={200} height={150} className='img'/>
+                    <img src={Heley} alt="Heley Abreu" className='img'/>
                 </Grid>
                 
             </Grid>   
@@ -79,7 +79,7 @@ function MulheresInspiradoras() {
             <Grid justifyContent="center" alignItems="center" className="box-cima-d">
                 
                 <Grid className='img-grid-d'>
-                    <img src={Amelia} alt="Amelia Earhart" width={200} height={150} className='img-d' />
+                    <img src={Amelia} alt="Amelia Earhart" className='img' />
                 </Grid>
                 
                 <Grid>
@@ -98,7 +98,7 @@ function MulheresInspiradoras() {
                     </Box>
                 </Grid>
                 <Grid  className="img-grid" >
-                    <img src={Malala} alt="Malala Yousafzai" width={200} height={150} className='img'/>
+                    <img src={Malala} alt="Malala Yousafzai" className='img'/>
                 </Grid>
             </Grid>    
 

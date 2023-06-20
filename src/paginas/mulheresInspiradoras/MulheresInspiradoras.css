@@ -24,21 +24,22 @@
 @media(max-width: 700px) {
 
     .box-cima {
-        align-items: center ;
-        width: 90% !important;
-        margin: 0 !important;
-        padding: 2vh !important;
-        flex-direction: column;
-        padding-top: 7vh !important;
+            display: flex;
+              flex-direction: column !important;
+              align-items: center !important ;
+              justify-content: center !important;
+              padding-top: 10vh !important; 
+              padding-bottom: 5vh !important;
+              
     }
-    .img-grid{
+    /* .img-grid{
         padding-top: 5% !important;
         
-    }
+    } */
 
     .img{
-        width: 50vh;
-        height: 30vh ;
+        width: 100% !important;
+        height: 60% !important ;
     }
 
 }
@@ -82,8 +83,8 @@
              padding-right: 2.5vh !important; 
             }
             .img-d{
-                width: 50vh;
-                height: 30vh ;
+                width: 100% !important;
+                height: 60% !important ;
             }
 
 }
