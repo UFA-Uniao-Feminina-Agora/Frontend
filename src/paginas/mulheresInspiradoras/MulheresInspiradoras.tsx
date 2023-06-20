@@ -5,6 +5,8 @@ import { Box } from '@mui/material';
 import Ada from '../../assets/images/ada-lovelace.jpeg';
 import Lisa from '../../assets/images/lisa-su.jpeg';
 import Heley from '../../assets/images/heley-abreu.jpg';
+import Amelia from '../../assets/images/Amelia Earhart.avif';
+import Malala from '../../assets/images/malala Yousafzai.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../store/token/Reducer';
@@ -72,8 +74,34 @@ function MulheresInspiradoras() {
                     <img src={Heley} alt="Heley Abreu" width={200} height={150} className='img'/>
                 </Grid>
                 
+            </Grid>   
+
+            <Grid justifyContent="center" alignItems="center" className="box-cima-d">
+                
+                <Grid className='img-grid-d'>
+                    <img src={Amelia} alt="Amelia Earhart" width={200} height={150} className='img-d' />
+                </Grid>
+                
+                <Grid>
+                    <Box>
+                        <Typography className='txt-d' gutterBottom color="textPrimary" component="h3" align="justify" style={{ color: "black" }}>Amelia é um símbolo importante no setor de aviação dos Estados Unidos e defensora dos direitos das mulheres! Além de ser a primeira mulher a voar sozinha sobre o Oceano Atlântico, o que a fez receber a condecoração militar “The Distinguished Flying Cross” atribuída a atos heroicos, escreveu livros sobre suas experiências na aviação, que posteriormente ajudou diversas outras mulheres que desejavam pilotar um avião, foi uma verdadeira inspiração!</Typography>
+                        {/* <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "black", fontWeight: "bold" }}>Ver os nossos temas!</Typography> */}
+                    </Box>
+                </Grid>
             </Grid>
-         
+
+            <Grid justifyContent="center" alignItems="center" className="box-cima">
+                <Grid >
+                    <Box  >
+                        <Typography className='txt' gutterBottom color="textPrimary" component="h3" align="justify" style={{ color: "black" }}>O nome de Malala passou a ser conhecido mundialmente quando, aos 15 anos, foi baleada por um militante Talibã, por seu ativismo à educação das mulheres e meninas no Paquistão. Um acontecimento muito forte e marcante, para uma menina tão jovem. Aos 17 anos, foi reconhecida por sua luta, se tornando a pessoa mais jovem a ganhar o prêmio Nobel da Paz (2014).</Typography>
+                        {/* <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>Entre em contato com a desenvolvedora!</Typography> */}
+                    </Box>
+                </Grid>
+                <Grid  className="img-grid" >
+                    <img src={Malala} alt="Malala Yousafzai" width={200} height={150} className='img'/>
+                </Grid>
+            </Grid>    
+
         </>)
 
 };
